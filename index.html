@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>作家作品導覽頁（範本）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap：本地檔案，不使用 CDN -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/site.css">
+<!-- 自訂 JS（非 Bootstrap 的部分）：放在 head，讓深淺色在畫面繪製前就設定好 -->
+<script src="js/app.js"></script>
+</head>
+<body>   
+<div class="border-bottom small text-secondary">
+  <div class="container d-flex justify-content-between gap-3 py-2">
+    <span>範本預覽：文字與連結皆為示範內容</span>
+    <a href="#stats">追蹤示範</a>
+  </div>
+</div>
+<main class="container" id="app"></main>
+<footer class="border-top small text-secondary mt-4 py-4">
+  <div class="container">請把作家姓名、封面、簡介與購買連結換成你自己的內容。</div>
+</footer>
+
+
+<!-- Bootstrap Modal：清除數據確認 -->
+<div class="modal fade" id="clearModal" tabindex="-1" aria-labelledby="clearTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="clearTitle">清除數據</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="關閉"></button>
+      </div>
+      <div class="modal-body">確定要清除這個瀏覽器上的所有追蹤數據嗎？</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-pill" data-bs-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="clearOk">清除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap Toast：操作提示 -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="appToast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    <div class="toast-body" id="appToastBody"></div>
+  </div>
+</div>
+
+<!-- Bootstrap JS：本地檔案，不使用 CDN -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
