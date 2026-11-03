@@ -10,7 +10,7 @@
 
 // ===== 1. Google Analytics 4 =====
 // 貼上 GA4 的「評估 ID」（G-XXXXXXXXXX）。留空則不載入 GA、不送出任何資料。
-const GA_ID = '';
+const GA_ID = 'G-4Z36X9TCG8';
 (function initGA() {
   if (!GA_ID) return;
   window.dataLayer = window.dataLayer || [];
