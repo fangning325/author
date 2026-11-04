@@ -45,3 +45,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bs-primary);outline
 
 /* 作品頁音檔播放器 */
 .audio-box audio{width:100%;max-width:36em;display:block}
+
+
+
+.cover {
+  background-color: var(--c);          /* 備用色 */
+  background-image: var(--img);
+  background-size: cover;              /* 填滿並裁切 */
+  background-position: center;
+  background-repeat: no-repeat;
+}
