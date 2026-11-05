@@ -1,0 +1,60 @@
+/* 作家導覽頁：只放 Bootstrap 沒有的部分（書封、字型、配色變數） */
+:root,[data-bs-theme="light"]{
+  --bs-body-bg:#f2f4f1;--bs-body-color:#1d2624;--bs-secondary-color:#5f6b67;
+  --bs-border-color:#d5dcd7;--bs-primary:#1f4e4a;--bs-primary-rgb:31,78,74;
+  --bs-link-color:#1f4e4a;--bs-link-hover-color:#143634;
+  --surface:#fff;
+}
+[data-bs-theme="dark"]{
+  --bs-body-bg:#111614;--bs-body-color:#e6ebe8;--bs-secondary-color:#9aa6a1;
+  --bs-border-color:#2b3532;--bs-primary:#7fc1b8;--bs-primary-rgb:127,193,184;
+  --bs-link-color:#7fc1b8;--bs-link-hover-color:#a6d8d1;
+  --surface:#1a211f;
+}
+body{font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;line-height:1.75;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+h1,h2,h3,.serif{font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;font-weight:700;line-height:1.35}
+.site-title{font-size:clamp(2.4rem,9vw,4.5rem);letter-spacing:.08em}
+.lead-narrow{max-width:30em}
+.text-narrow{max-width:36em}
+
+/* 書封 */
+.cover{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--c,#2b3532);color:#f6f3ea;display:flex;justify-content:space-between;
+  padding:1rem .9rem;border-radius:3px 8px 8px 3px}
+.cover-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.cover::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 7px 0 0 rgba(0,0,0,.2);pointer-events:none;z-index:1}
+.cover .t,.cover .a{position:relative;z-index:2}
+.cover .t{writing-mode:vertical-rl;font-family:"Noto Serif TC","Songti TC",serif;font-weight:700;
+  font-size:clamp(1.7rem,6.5vw,2.5rem);letter-spacing:.22em;margin-left:.4rem}
+.cover .a{writing-mode:vertical-rl;align-self:flex-end;font-size:.75rem;opacity:.85;letter-spacing:.15em}
+.work-cover{max-width:260px}
+.card-link{text-decoration:none;color:inherit;display:block}
+.card-link:hover .line{text-decoration:underline}
+
+/* 按鈕與進度條配色 */
+.btn-outline-primary{--bs-btn-hover-color:var(--bs-body-bg)}
+[data-bs-theme="dark"] .btn-outline-primary{--bs-btn-hover-color:#0f1715}
+.progress{height:6px;min-width:80px;background:var(--bs-border-color)}
+.btn-pill{border-radius:50rem;--bs-btn-bg:var(--surface);--bs-btn-border-color:var(--bs-border-color);--bs-btn-color:var(--bs-body-color)}
+pre{background:var(--surface);border:1px solid var(--bs-border-color);border-radius:.4rem;padding:1rem;font-size:.8rem}
+.list-group-item{background:transparent}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bs-primary);outline-offset:3px}
+
+/* 實心主色按鈕（Modal 用） */
+.btn-primary{--bs-btn-bg:var(--bs-primary);--bs-btn-border-color:var(--bs-primary);--bs-btn-color:#fff;
+  --bs-btn-hover-bg:var(--bs-link-hover-color);--bs-btn-hover-border-color:var(--bs-link-hover-color);--bs-btn-hover-color:#fff;
+  --bs-btn-active-bg:var(--bs-link-hover-color);--bs-btn-active-border-color:var(--bs-link-hover-color)}
+[data-bs-theme="dark"] .btn-primary{--bs-btn-color:#0f1715;--bs-btn-hover-color:#0f1715}
+
+/* 作品頁音檔播放器 */
+.audio-box audio{width:100%;max-width:36em;display:block}
+
+
+
+.cover {
+  background-color: var(--c);          /* 備用色 */
+  background-image: var(--img);
+  background-size: cover;              /* 填滿並裁切 */
+  background-position: center;
+  background-repeat: no-repeat;
+}
