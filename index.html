@@ -12,50 +12,45 @@
 <link rel="stylesheet" href="css/site.css">
 <!-- 自訂 JS（深淺色、GA 統計）：放在 head，讓深淺色在畫面繪製前就設定好 -->
 <script src="js/app.js"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K89PV6KNY3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K89PV6KNY3');
-</script>
-
 </head>
+
 <body> 
 <div class="border-bottom small text-secondary">
-  <!-- <div class="container py-2">範本預覽：文字與連結皆為示範內容</div> -->
+  <!-- <div class="container py-2"></div> -->
 </div>
-<main class="container">
 
+<main class="container">
   <h1 class="site-title mt-5 mb-2">作家姓名</h1>
   <p class="lead-narrow text-secondary mb-5">寫小說、散文與詩。這裡收著四本書的簡介，選一本開始讀。</p>
   <ul class="row row-cols-2 row-cols-lg-4 g-4 list-unstyled mb-5">
     <li class="col"><a class="card-link" href="work-1.html" data-work="work-1" data-title="潮聲" data-pos="1">
-      <div class="cover" style="background-image:url('image/01chaosheng.jpg')">
+      <div class="cover">
+        <img class="cover-img" src="image/01chaosheng.jpg" alt="" width="900" height="1200">
         <span class="t">潮聲</span><span class="a">作家姓名</span>
       </div>
       <span class="d-block small text-secondary mt-3">長篇小說</span><span class="line d-block">一座漁港，三代人，一個沒說出口的名字。</span></a>
     </li>
 
     <li class="col"><a class="card-link" href="work-2.html" data-work="work-2" data-title="夜行書店" data-pos="2">
-      <div class="cover" style="background-image:url('image/02yeying.jpg')">
+      <div class="cover">
+        <img class="cover-img" src="image/02yeying.jpg" alt="" width="900" height="1200">
         <span class="t">夜行書店</span><span class="a">作家姓名</span>
       </div>
       <span class="d-block small text-secondary mt-3">散文集</span><span class="line d-block">凌晨兩點才開門的書店，只賣給失眠的人。</span></a>
     </li>
 
-    <li class="col"><a class="card-link" href="work-3.html" data-work="work-3" data-title="舊城地圖" data-pos="3">
-      <div class="cover" style="background-image:url('image/03jiucheng.jpg')">
+    <li class="col"><a class="card-link" href="work-3.html" data-work="sound-3" data-title="舊城地圖" data-pos="3">
+      <div class="cover">
+        <img class="cover-img" src="image/03jiucheng.jpg" alt="" width="900" height="1200">
         <span class="t">舊城地圖</span><span class="a">作家姓名</span>
       </div>
       <span class="d-block small text-secondary mt-3">短篇小說集</span><span class="line d-block">用十二條街，重畫一座消失的城。</span></a></li>
       
     <li class="col"><a class="card-link" href="work-4.html" data-work="work-4" data-title="山語" data-pos="4">
-      <div class="cover" style="background-image:url('image/04shanyu.jpg')">
-        <span class="t">山語</span><span class="a">作家姓名</span></div>
+      <div class="cover">
+        <img class="cover-img" src="image/04shanyu.jpg" alt="" width="900" height="1200">
+        <span class="t">山語</span><span class="a">作家姓名</span>
+      </div>
       <span class="d-block small text-secondary mt-3">詩集</span><span class="line d-block">寫給走過山路的人，也寫給沒能回來的人。</span></a></li>
   </ul>
 

@@ -12,18 +12,8 @@
 <link rel="stylesheet" href="css/site.css">
 <!-- 自訂 JS（深淺色、GA 統計）：放在 head，讓深淺色在畫面繪製前就設定好 -->
 <script src="js/app.js"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K89PV6KNY3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K89PV6KNY3');
-</script>
-
 </head>
+
 <body>
 <div class="border-bottom small text-secondary">
   <!-- <div class="container py-2">範本預覽：文字與連結皆為示範內容</div> -->
@@ -33,7 +23,8 @@
   <article class="row g-4 g-md-5 py-4 mb-4">
 
     <div class="col-12 col-md-4 col-lg-3">
-      <div class="cover work-cover" style="background-image:url('image/03jiucheng.jpg')">
+      <div class="cover work-cover">
+        <img class="cover-img" src="image/03jiucheng.jpg" alt="" width="900" height="1200">
         <span class="t">舊城地圖</span><span class="a">作家姓名</span>
       </div>
     </div>
