@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('play', e => {
     const a = e.target;
     if (!a.matches || !a.matches('audio[data-audio]')) return;
-    if (a.currentTime < 0.5) track('audio_play', {work_id: a.dataset.audio, work_title: a.dataset.title});
+    if (a.currentTime < 0.5) track('audio_play', {audio_id: a.dataset.audio, work_title: a.dataset.title});
   }, true);
 
   document.addEventListener('click', e => {
